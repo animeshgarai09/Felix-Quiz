@@ -1,0 +1,65 @@
+@import "../utils/functions.scss";
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-SemiBold.woff2) format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+:root {
+    --input-bg: #e5e5e563;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    color: var(--text-color);
+    line-height: 1.5em;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+}
+
+.header {
+    border-bottom: 1px solid var(--border-color-3);
+    position: sticky;
+    background: #fff;
+    top: 0;
+    z-index: 10;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1240px;
+        margin: auto;
+        align-items: center;
+        padding: 1.25rem 1.25rem;
+    }
+    &__logo {
+        width: 120px;
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+        a {
+            margin-left: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.hero-section {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    max-width: 1240px;
+    margin-inline: auto;
+    padding-block: 2rem;
+    gap: 4rem;
+    .image {
+        img {
+            border-radius: 15px;
+        }
+    }
+}
