@@ -1,13 +1,72 @@
-.hero-section {
+section {
   display: grid;
-  grid-template-columns: 2fr 3fr;
   max-width: 1240px;
+  min-height: calc(100vh - 8rem);
   margin-inline: auto;
-  padding-block: 2rem;
+  padding-inline: 1rem;
   gap: 4rem;
+  align-items: center;
 }
-.hero-section .image img {
+
+.left-expand {
+  grid-template-columns: 3fr 2fr;
+}
+
+.right-expand {
+  grid-template-columns: 2fr 3fr;
+  text-align: right;
+}
+
+.hero-section {
+  text-align: left;
+}
+
+.image img {
   border-radius: 15px;
+}
+
+.quiz-text {
+  width: 90%;
+}
+.quiz-text span {
+  font-weight: 600;
+}
+.quiz-text p {
+  color: var(--gray-2);
+}
+.quiz-text .info {
+  margin-bottom: 2rem;
+}
+.quiz-text .info span {
+  margin-right: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.quiz-text .info span i {
+  margin-right: 0.5rem;
+  color: var(--green);
+}
+
+.text {
+  margin-top: -1rem;
+}
+.text span {
+  font-weight: 600;
+  line-height: 1.7;
+  display: block;
+}
+.text span:first-of-type {
+  font-size: 4rem;
+}
+.text span:last-of-type {
+  line-height: 1;
+  font-size: 3.4rem;
+}
+.text p {
+  width: 70%;
+  font-size: 1.2rem;
+  margin-block: 2rem;
+  color: var(--gray-2);
 }
 
 /*# sourceMappingURL=index.css.map */
