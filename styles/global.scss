@@ -23,6 +23,7 @@
     font-display: swap;
 }
 :root {
+    --page-bg: #f7f7f7;
     --input-bg: #e5e5e563;
 }
 
@@ -32,6 +33,7 @@ body {
     margin: 0;
     font-size: 100%;
     color: var(--text-color);
+    background: var(--page-bg);
     line-height: 1.5em;
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
@@ -61,5 +63,46 @@ body {
         a {
             margin-left: 1.5rem;
         }
+    }
+}
+
+.footer {
+    background: #212121;
+
+    .footer_wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 0.3rem;
+        align-items: baseline;
+        max-width: 1240px;
+        margin-inline: auto;
+    }
+    span {
+        font-size: 1rem;
+        display: inline-flex;
+        align-items: center;
+        color: var(--white);
+        i {
+            font-size: inherit;
+            color: var(--red);
+            margin: 0 0.4rem;
+        }
+        a {
+            // text-decoration: underline;
+            // font-weight: 600;
+            margin-left: 0.3rem;
+        }
+    }
+    &__links i {
+        font-size: 1.5rem;
+        margin: 0 0.8rem;
+        color: #b2b2b2;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            color: var(--primary);
+        }
+    }
+    &.home-footer {
+        height: auto;
     }
 }

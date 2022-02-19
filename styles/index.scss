@@ -1,13 +1,67 @@
-.hero-section {
+section {
     display: grid;
-    grid-template-columns: 2fr 3fr;
     max-width: 1240px;
+    min-height: calc(100vh - 8rem);
     margin-inline: auto;
-    padding-block: 2rem;
+    padding-inline: 1rem;
     gap: 4rem;
-    .image {
-        img {
-            border-radius: 15px;
+    align-items: center;
+}
+
+.left-expand {
+    grid-template-columns: 3fr 2fr;
+}
+.right-expand {
+    grid-template-columns: 2fr 3fr;
+    text-align: right;
+}
+.hero-section {
+    text-align: left;
+}
+.image {
+    img {
+        border-radius: 15px;
+    }
+}
+.quiz-text {
+    width: 90%;
+    span {
+        font-weight: 600;
+    }
+    p {
+        color: var(--gray-2);
+    }
+    .info {
+        margin-bottom: 2rem;
+        span {
+            margin-right: 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            i {
+                margin-right: 0.5rem;
+                color: var(--green);
+            }
         }
+    }
+}
+.text {
+    margin-top: -1rem;
+    span {
+        font-weight: 600;
+        line-height: 1.7;
+        display: block;
+        &:first-of-type {
+            font-size: 4rem;
+        }
+        &:last-of-type {
+            line-height: 1;
+            font-size: 3.4rem;
+        }
+    }
+    p {
+        width: 70%;
+        font-size: 1.2rem;
+        margin-block: 2rem;
+        color: var(--gray-2);
     }
 }
