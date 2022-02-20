@@ -1,0 +1,69 @@
+main {
+  min-height: calc(100vh - 80px);
+  max-width: 1240px;
+  margin-inline: auto;
+  padding: 2rem 0;
+}
+
+.hero-container {
+  background-image: url("/images/new.png");
+  height: 9rem;
+  background-repeat: repeat;
+  background-size: 80%;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+  position: relative;
+  color: var(--white);
+  padding: 1rem 3rem;
+  margin-bottom: 2rem;
+}
+.hero-container .text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.hero-container .text h1 {
+  margin: 0.7rem 0;
+  line-height: 1;
+}
+.hero-container .text p {
+  font-size: 0.9rem;
+  width: 50%;
+  line-height: 1.2;
+}
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  z-index: 0;
+  background: radial-gradient(70.02% 150.4% at 20.67% 24.02%, #3bb77e 0%, #3bb77ed9 55.59%, #ffffff00 100%);
+}
+
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+}
+
+.card__image {
+  max-width: none;
+  margin: 0;
+  max-height: 11.5rem;
+}
+
+.card__info {
+  margin-bottom: 1rem;
+}
+
+.card__content .card__name {
+  color: var(--primary);
+}
+
+/*# sourceMappingURL=category.css.map */

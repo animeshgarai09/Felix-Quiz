@@ -1,0 +1,35 @@
+main {
+    min-height: calc(100vh - 80px);
+    max-width: 1240px;
+    margin-inline: auto;
+    padding: 2rem 0;
+}
+
+.quiz__info {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    img {
+        width: 20rem;
+        border-radius: 15px;
+    }
+}
+.pointers {
+    font-size: 1rem;
+}
+.actions {
+    display: flex;
+    justify-content: space-between;
+    background: var(--white);
+    padding: 0.8rem;
+    border-radius: 6px;
+    align-items: baseline;
+    border: 1px solid var(--border-color-3);
+}
+.instruction-con {
+    margin-bottom: 2rem;
+}
+li i {
+    margin-right: 1rem;
+    color: var(--primary);
+}
